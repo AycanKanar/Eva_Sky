@@ -1,0 +1,69 @@
+@use '../Couleur' as *;
+
+#ip1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),$couleur1);
+
+    #ip2{
+        color: $couleur2;
+        background-color: $couleur1;
+        border: solid .1rem $couleur2;
+        border-radius: .5rem;
+        padding: .5rem;
+
+        h6{
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+    #ip3{
+        color: $couleur2;
+        background-color: $couleur1;
+        border: solid .1rem $couleur2;
+        border-radius: .5rem;
+        padding: .7rem;
+
+        h2{
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+    }
+    
+    #ip4{  
+        a{
+            text-decoration: none;
+            transition: all .5s ease-in-out;
+            cursor: pointer;
+            color: $couleur2;
+            background-color: $couleur1;
+            border: solid .1rem $couleur2;
+            border-radius: .5rem;
+            padding: .7rem 1rem;
+            display: block;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        a:hover,
+        a:focus{
+            background-color: $couleur3;
+    }
+    }
+}
+
+
+
+#sectionip{
+    position: relative;
+
+    hr{
+        position: absolute;
+        width: 100%;
+        color: $couleur2;
+        border-color: $couleur2;
+        z-index: -1;
+        top: 30%;
+    }
+}

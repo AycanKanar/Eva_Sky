@@ -1,0 +1,105 @@
+@use '../Couleur' as *;
+
+#carte-tout {
+    align-items:center;
+    background:$couleur1;
+    display:flex;
+    justify-content:center;
+    margin:0;
+    min-height:70vh;
+    padding:0;
+    }
+    
+    .carte-container {
+    display:flex;
+    justify-content:space-between;
+    position:relative;
+    width:1000px;
+    }
+    
+    .carte-container .carte {
+    position:relative;
+    }
+    
+    .carte-container .carte .face {
+    height:225px;
+    transition:.5s;
+    width:300px;
+    }
+    
+    .carte-container .carte .face.face1 {
+    align-items:center;
+    background:$couleur3;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    transform:translateY(100px);
+    z-index:1;
+    }
+    
+    .carte-container .carte:hover .face.face1 {
+    background:$couleur2;
+    transform:translateY(0);
+    }
+    
+    .carte-container .carte .face.face1 .interieur-carte {
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    opacity:.6;
+    transition:.5s;
+    }
+    
+    .carte-container .carte:hover .face.face1 .interieur-carte {
+    opacity:1;
+    }
+    
+    .carte-container .carte .face.face1 .interieur-carte img {
+    max-width:100px;
+    }
+    
+    .carte-container .carte .face.face1 .interieur-carte h3 {
+    color:#000;
+    font-size:1.5em;
+    margin:10px 0 0;
+    padding:0;
+    text-align:center;
+    }
+    
+    .carte-container .carte .face.face2 {
+    align-items:center;
+    background:#fff;
+    box-shadow:0 20px 50px rgba(0,0,0,0.8);
+    box-sizing:border-box;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+    position:relative;
+    transform:translateY(-100px);
+    }
+    
+    .carte-container .carte:hover .face.face2 {
+    transform:translateY(0);
+    }
+    
+    .carte-container .carte .face.face2 .interieur-carte p {
+    font-size:1.2rem;
+    margin:0;
+    padding:0;
+    text-align:center;
+    }
+    
+    .carte-container .carte .face.face2 .interieur-carte a {
+    border:1px solid #333;
+    color:#333;
+    display:inline-block;
+    font-weight:900;
+    margin:15px 0 0;
+    padding:5px;
+    text-decoration:none;
+    }
+    
+    .carte-container .carte .face.face2 .interieur-carte a:hover {
+    background:#333;
+    color:#fff;
+    }

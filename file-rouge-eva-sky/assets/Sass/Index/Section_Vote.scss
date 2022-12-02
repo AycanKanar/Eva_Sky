@@ -1,0 +1,91 @@
+@use '../Couleur' as *;
+
+.classement {
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    padding-bottom:5rem;
+    }
+    
+    .pclassement1 {
+    color:$couleur3;
+    font-size:3rem;
+    font-weight:700;
+    padding-bottom:3rem;
+    padding-top:5rem;
+    text-shadow:#000 .1rem .1rem .1rem;
+    }
+    
+    .pclassement2 {
+    color:$couleur3;
+    font-size:1.5rem;
+    text-align:center;
+    text-shadow:#000 .1rem .1rem .1rem;
+    width:55rem;
+    }
+    
+    #back1 {
+    box-shadow:$couleur2 .1rem .2rem .6rem;
+    height:.1rem;
+    width:100%;
+    }
+    
+    #casevote {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    padding-bottom:5rem;
+    }
+    
+    .vote {
+    align-items:center;
+    background-color:$couleur3;
+    box-shadow:#000 .5rem .5rem 1rem;
+    display:flex;
+    flex-direction:column;
+    height:20rem;
+    transition:all .5s ease-out;
+    width:15rem;
+    border-radius: 2rem 0rem 2rem 0rem;
+    }
+    
+    .vote:hover {
+    box-shadow:#000 1rem 1.5rem 1rem;
+    }
+    
+    .votediv {
+    align-items:center;
+    background-color:$couleur2;
+    border-radius:100%;
+    display:flex;
+    height:10rem;
+    justify-content:center;
+    margin-top:2rem;
+    overflow:hidden;
+    width:10rem;
+    }
+    
+    .votediv img {
+    width:7rem;
+    }
+    
+    .voteclass h2 {
+    color:$couleur1;
+    font-size:2rem;
+    font-weight:700;
+    padding-top:2rem;
+    }
+    
+    .voteclass {
+    text-align:center;
+    }
+    
+    .voteclass p {
+    font-size:1.2rem;
+    font-weight:700;
+    padding-top:1rem;
+    }
+    
+    #vote1,#vote3 {
+    margin-top:5rem;
+    }

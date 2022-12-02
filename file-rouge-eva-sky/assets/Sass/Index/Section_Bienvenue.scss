@@ -1,0 +1,71 @@
+@use '../Couleur' as *;
+
+#back-ground-index {
+    background-image:none;
+    background-repeat:no-repeat;
+    background-size:125rem;
+    columns:2;
+    display:flex;
+    flex-wrap:wrap;
+    height:70vh;
+    justify-content:space-evenly;
+
+    #bienvenue1{
+        padding-top: 15vh;
+    
+        #bienvenue2{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $couleur1;
+            border: solid .1rem $couleur2;
+            border-radius: 2rem 0 2rem 0;
+            box-shadow: 0rem 0rem 1rem $couleur2;
+            padding: 2rem;
+            opacity: 0.8;
+    
+            #bienvenue3 {
+                color: $couleur3;
+                font-size:4rem;
+                font-weight:bolder;
+                opacity:1;
+                text-shadow:$couleur1 .1rem .1rem .1rem;
+            }
+    
+            #joueur {
+                color: $couleur3;
+                font-size:2rem;
+                font-weight:500;
+                margin-top:2rem;
+                text-shadow:$couleur1 .1rem .1rem .1rem;
+                text-align: end;
+            }
+        }
+    }
+    
+    #desc1{
+        padding-top: 35vh;
+    
+        #desc2{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $couleur1;
+            border: solid .1rem $couleur2;
+            border-radius: 0rem 2rem 0rem 2rem;
+            box-shadow: 0rem 0rem 1rem $couleur2;
+            padding: 2rem;
+            opacity: 0.8;
+            
+            #desc3 {
+                color:$couleur3;
+                font-size:2rem;
+                text-align:center;
+                text-shadow:$couleur1 .1rem .1rem .1rem;
+            }
+        }
+    }
+}
+

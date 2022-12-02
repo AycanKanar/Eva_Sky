@@ -1,0 +1,22 @@
+@use 'Header_Footer/Header.scss';
+@use 'Index/Section_Bienvenue';
+@use 'Index/ip.scss';
+@use 'Index/Section_Actus';
+@use 'Index/Section_Vote';
+@use 'Index/Section_Carte';
+@use 'Header_Footer/Footer.scss';
+
+
+
+@use 'Reglement/Reglement.scss';
+
+
+
+body{
+    width: 100%;
+    opacity: 1;
+    background-image: url('../img/backshadow.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

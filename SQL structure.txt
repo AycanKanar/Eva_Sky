@@ -1,0 +1,48 @@
+CREATE TABLE role(
+   id_role INT,
+   nom VARCHAR(50) NOT NULL,
+   couleur VARCHAR(50) NOT NULL,
+   force SMALLINT NOT NULL,
+   is_admin BYTE NOT NULL,
+   cree_a DATETIME NOT NULL,
+   moddifier_a DATETIME NOT NULL,
+   PRIMARY KEY(id_role)
+);
+
+CREATE TABLE ban(
+   id_ban INT,
+   raison VARCHAR(255),
+   fais_a DATETIME NOT NULL,
+   cree_a DATETIME NOT NULL,
+   moddifier_a DATETIME NOT NULL,
+   PRIMARY KEY(id_ban)
+);
+
+CREATE TABLE membres(
+   id_membre INT,
+   pseudo VARCHAR(50) NOT NULL,
+   email VARCHAR(150) NOT NULL,
+   mdp VARCHAR(100) NOT NULL,
+   mail_verifier_a DATETIME,
+   derniere_connection_a DATETIME NOT NULL,
+   cree_a DATETIME NOT NULL,
+   moddiffier_a DATETIME NOT NULL,
+   supprimer_a DATETIME NOT NULL,
+   id_ban INT,
+   id_role INT,
+   PRIMARY KEY(id_membre),
+   FOREIGN KEY(id_ban) REFERENCES ban(id_ban),
+   FOREIGN KEY(id_role) REFERENCES role(id_role)
+);
+
+CREATE TABLE article(
+   id_article INT,
+   titre VARCHAR(255) NOT NULL,
+   Desc_court VARCHAR(255) NOT NULL,
+   contenue TEXT NOT NULL,
+   img_url_article TEXT NOT NULL,
+   date_time DATETIME,
+   id_membre INT,
+   PRIMARY KEY(id_article),
+   FOREIGN KEY(id_membre) REFERENCES membres(id_membre)
+);
